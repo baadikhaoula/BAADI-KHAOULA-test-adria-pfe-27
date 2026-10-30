@@ -23,7 +23,7 @@ public class AccountController {
         return accountService.getAllAccounts();
     }
 
-    //  Récupérer un compte par son ID (GET)
+    // Récupérer un compte par son ID (GET)
     @GetMapping("/{id}")
     public Account getAccountById(@PathVariable UUID id) {
         return accountService.getAccountById(id);
